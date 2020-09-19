@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Designer">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/u"
+            >
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/profilepic"
+                        android:id="@+id/profileImageView"
+
+                        />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:text="Designer Registration"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:textSize="40dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="Enter The Designer Name"
+
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/login_et_bg"
+            android:layout_below="@id/u"
+            android:id="@+id/edt_name" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_email"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/login_et_bg"
+            android:layout_below="@id/edt_name"
+            android:hint="Enter the Designer email"
+            android:id="@+id/edt_mail"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_mail"
+            android:gravity="center"
+            android:hint="Enter the phone Number"
+            android:drawableLeft="@drawable/ic_phone"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/login_et_bg"
+            android:id="@+id/phone_number"/>
+
+
+    /<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Date Of Birth"
+            android:gravity="center"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/login_et_bg"
+            android:layout_below="@+id/phone_number"
+            android:id="@+id/tvDate"/>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDate"
+            android:drawableLeft="@drawable/ic_home"
+            android:hint="Enter the Home Number "
+            android:gravity="center"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/login_et_bg"
+            android:id="@+id/home_add"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_add"
+            android:hint="Please Enter the Capability"
+            android:drawableLeft="@drawable/ic_capability"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/login_et_bg"
+            android:id="@+id/capability_perpage"/>
+
+    <EditText
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:hint="terms and Conditions"
+            android:drawableLeft="@drawable/ic_terms_conditions"
+            android:textSize="25dp"
+
+            android:textColorHint="@color/lite_black"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+
+            android:background="@drawable/login_et_bg"
+            android:layout_below="@id/capability_perpage"
+            android:id="@+id/terms_conditions"/>
+
+
+ /   <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the cnic"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/login_et_bg"
+            android:layout_below="@+id/terms_conditions"
+            android:id="@+id/cnic"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/qualification"
+            android:layout_below="@+id/cnic"
+
+            >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/choose_qualification"
+                android:gravity="center"
+                android:hint="choose Cpability"
+                android:textColorHint="@color/design_default_color_error"/>
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/spinner_qualification"/>
+    </LinearLayout>
+
+
+<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qualification"
+        android:textColorHint="@color/lite_black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="5dp"
+        android:hint="Enter No. of pages "
+        android:drawableLeft="@drawable/ic_pages"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/login_et_bg"
+        android:id="@+id/rate"
+    />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:textColorHint="@color/lite_black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:hint="Enter Rate per pages"
+                android:drawableLeft="@drawable/ic_rate"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/login_et_bg"
+                android:id="@+id/pages"
+                />
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pages"
+            android:id="@+id/editText"
+                android:hint="Select file from storage"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orange"
+            android:layout_centerHorizontal="true"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/editText"
+            android:id="@+id/btns">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capability"
+                android:id="@+id/btn_save"
+                android:background="@drawable/ic_register"
+                 />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_save"
+                android:id="@+id/btn"
+
+                android:background="@drawable/round_btn_b"
+                android:text="confirm"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

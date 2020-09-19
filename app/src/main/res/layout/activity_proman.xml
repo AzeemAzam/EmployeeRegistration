@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".proman">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/u"
+                    >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/profilepic"
+                            android:id="@+id/RegisterPage_userProfileIV"
+
+
+                            />
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                        android:text="Project Manager Registration"
+                            android:layout_marginTop="25dp"
+                            android:textSize="40dp"
+                            android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="ں Manager's Name"
+            android:layout_below="@id/u"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:background="@drawable/round_bt"
+            android:id="@+id/edt_name" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:layout_marginRight="25dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_email"
+        android:layout_below="@id/edt_name"
+        android:hint="Managers Email"
+            android:id="@+id/edt_mail"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+        android:layout_below="@id/edt_mail"
+            android:hint="Enter  Phone Number"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:layout_marginRight="25dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/phone_number"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Date of Birth"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:layout_marginRight="25dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+        android:layout_below="@+id/phone_number"
+        android:id="@+id/tvDate"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+        android:layout_below="@+id/tvDate"
+            android:hint="Enter HomeAdress "
+            android:textColorHint="@color/lite_black"
+            android:drawableLeft="@drawable/ic_home"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:layout_marginRight="25dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+        android:id="@+id/home_add"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+        android:layout_below="@id/home_add"
+            android:hint="Enter Qualification"
+            android:drawableLeft="@drawable/ic_pages"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:layout_marginRight="25dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/capability_perpage"/>
+    <EditText
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:hint="Please Enter Terms and Conditiond"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:layout_marginRight="25dp"
+            android:paddingTop="5dp"
+            android:drawableLeft="@drawable/ic_terms_conditions"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/capability_perpage"
+        android:id="@+id/terms_conditions"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="@color/lite_black"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/round_bt"
+            android:layout_marginRight="25dp"
+            android:paddingTop="5dp"
+            android:drawableLeft="@drawable/ic_cnic"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Project Manager CNIC"
+        android:layout_below="@+id/terms_conditions"
+        android:id="@+id/cnic"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:id="@+id/qualification"
+            android:layout_below="@+id/cnic"
+
+        >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:id="@+id/choose_qualification"
+                android:gravity="center"
+            android:hint="Choose Capability"
+            android:textColorHint="@color/red"/>
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+            android:id="@+id/spinner_qualification"/>
+    </LinearLayout>
+
+
+   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_below="@+id/qualification"
+       android:id="@+id/btns">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_below="@+id/capability"
+            android:id="@+id/btn_save"
+            android:text="Register رجسٹر " />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save"
+            android:id="@+id/btn"
+            android:background="@drawable/ic_register"
+        android:text=""/>
+
+   </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

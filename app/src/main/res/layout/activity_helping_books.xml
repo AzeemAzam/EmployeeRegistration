@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HelpingBooks">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/profilepic"
+            android:id="@+id/RegisterPage_userProfileIV"
+
+
+            />
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:layout_below="@id/RegisterPage_userProfileIV"
+            android:id="@+id/edt_name" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/edt_name"
+            android:hint="mail"
+
+            android:id="@+id/edt_mail"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_mail"
+            android:hint="phon"
+            android:id="@+id/phone_number"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="dob"
+            android:layout_below="@+id/phone_number"
+            android:id="@+id/dob"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob"
+            android:hint="home "
+            android:id="@+id/home_add"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_add"
+            android:hint="Helping books"
+            android:id="@+id/capability_perpage"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="terms"
+            android:layout_below="@id/capability_perpage"
+            android:id="@+id/terms_conditions"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="cnic"
+            android:layout_below="@+id/terms_conditions"
+            android:id="@+id/cnic"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/qualification"
+            android:layout_below="@+id/cnic"
+
+            >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/choose_qualification"
+                android:gravity="center"
+                android:hint="choose Cpability"
+                android:textColorHint="@color/colorAccent"/>
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/spinner_qualification"/>
+    </LinearLayout>
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/qualification"
+            android:id="@+id/serachable_spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/serachable_spinner"
+            android:id="@+id/btns">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capability"
+                android:id="@+id/btn_save"
+                android:text="Register" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_save"
+                android:id="@+id/btn"
+                android:text="confirm"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

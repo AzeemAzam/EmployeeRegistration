@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "315716069244",
+    "firebase_url": "https://testsat-832ad.firebaseio.com",
+    "project_id": "testsat-832ad",
+    "storage_bucket": "testsat-832ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315716069244:android:095cac5efac2ea3019a6f9",
+        "android_client_info": {
+          "package_name": "com.test.testsat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315716069244-2kbsi9e567noedend271tbf2sbro158b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.testsat",
+            "certificate_hash": "c353f4009216ab91e20fcae0cad171dd484de53f"
+          }
+        },
+        {
+          "client_id": "315716069244-pj5dno0kiuldrrcj0chqiq761jg4meqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATXAKSScYYjqAOrzsXGJeLeYbvfO5tytE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315716069244-pj5dno0kiuldrrcj0chqiq761jg4meqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

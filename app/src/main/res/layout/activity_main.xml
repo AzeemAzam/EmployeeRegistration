@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/silver"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:elevation="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_bt"
+            android:text="Project Manager Registartion"
+
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_below="@id/button"
+            android:background="@drawable/round_btn_"
+            android:layout_marginTop="20dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+
+            android:text="Composer Registration" />
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="350dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button2"
+            android:background="@drawable/round_btn_"
+
+android:textSize="30dp"
+            android:text="Writer Registration" />
+
+    <Button
+            android:id="@+id/button4"
+            android:layout_width="350dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:background="@drawable/login_et_bg"
+
+            android:text="Designer Registration" />
+
+    <Button
+            android:id="@+id/button5"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button4"
+            android:background="@drawable/round_btn_"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Books Registration" />
+
+    <Button
+            android:id="@+id/button6"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button5"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:text="Helpiong Book Registration " />
+
+</RelativeLayout>
